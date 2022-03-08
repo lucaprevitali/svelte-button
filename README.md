@@ -2,6 +2,8 @@
 
 A simple button component made in Svelte
 
+Try it in the [Svelte REPL](https://svelte.dev/repl/8c2c1227011049e4bc6c6312abe2748f)
+
 ## Installation
 
 **Yarn**
@@ -71,6 +73,7 @@ To override the default color scheme there are available `primaryColor` and `sec
 
 ```svelte
 <Button
+  id="svelte-btn"
   variant="outline"
   primaryColor="red"
   secondaryColor="yellow"

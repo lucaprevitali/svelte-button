@@ -1,7 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
 
-  export let text = "Button";
   export let disabled = false;
   export let tabindex = null;
   export let id = "";
