@@ -54,7 +54,7 @@ And with the `containerClass` prop is possibile to assign a custom class to the 
 Between the opening and closing "Button" tag you can insert the custom template that you want.
 For example to achieve a template with a left icon you can do as following:
 
-```
+```svelte
 <Button on:change={handleChange} variant="outline">
   <img src="path/to/icon.svg" alt="custom icon" />
   Save

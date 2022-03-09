@@ -26,7 +26,6 @@
     direction: ltr;
     border-radius: ${h / 6}px;
     user-select: none;
-    font-weight: 600;
     padding: 10px 15px;
     cursor: pointer;
   `;
