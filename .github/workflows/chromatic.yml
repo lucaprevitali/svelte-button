@@ -1,9 +1,9 @@
-name: 'Chromatic Deployment'
+name: Chromatic Deployment
 
 on: push
 
 jobs:
-  test:
+  build-storybook:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1

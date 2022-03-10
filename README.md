@@ -2,7 +2,10 @@
 
 A simple button component made in Svelte
 
+## Demo
+
 Try it in the [Svelte REPL](https://svelte.dev/repl/8c2c1227011049e4bc6c6312abe2748f)
+or play with the [Storybook](https://main--6229ceda6f955d003a8e368d.chromatic.com)
 
 ## Installation
 
