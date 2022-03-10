@@ -9,7 +9,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=2f285ef24e1c"
   },
   "keywords": [
     "button",
@@ -27,11 +28,11 @@
     "@storybook/addon-svelte-csf": "^1.1.0",
     "@storybook/svelte": "^6.4.19",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.5.1",
     "rollup": "^2.68.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^7.1.0",
     "svelte": "^3.46.4",
     "svelte-loader": "^3.1.2"
-  },
-  "dependencies": {}
+  }
 }
