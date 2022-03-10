@@ -1,13 +1,15 @@
 {
   "name": "svelte-button",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A button component for Svelte based projects",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "svelte": "src/index.js",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "button",
@@ -18,9 +20,18 @@
   "author": "Luca Previtali",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addon-svelte-csf": "^1.1.0",
+    "@storybook/svelte": "^6.4.19",
+    "babel-loader": "^8.2.3",
     "rollup": "^2.68.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^7.1.0",
-    "svelte": "^3.46.4"
-  }
+    "svelte": "^3.46.4",
+    "svelte-loader": "^3.1.2"
+  },
+  "dependencies": {}
 }

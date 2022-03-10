@@ -1,4 +1,5 @@
 <script>
+  import "./Button.css";
   import { createEventDispatcher } from "svelte";
 
   export let disabled = false;
@@ -9,7 +10,6 @@
   export let secondaryColor = "#fff";
   export let variant = "solid";
   export let type = "button";
-  let h;
 
   const dispatch = createEventDispatcher();
 
@@ -20,35 +20,19 @@
     });
   }
 
-  let rootStyle = "";
-  $: rootStyle = `
-    text-align: center;
-    direction: ltr;
-    border-radius: ${h / 6}px;
-    user-select: none;
-    padding: 10px 15px;
-    cursor: pointer;
-  `;
-
   $: solidVariant = `
       background-color: ${primaryColor};
       color: ${secondaryColor};
-      border-radius: ${h / 4}px;
       border-color: ${primaryColor};
     `;
 
   $: outlineVariant = `
       background-color: ${secondaryColor};
       color: ${primaryColor};
-      border-radius: ${h / 4}px;
-      border: 1px solid ${primaryColor};
     `;
 
   $: linkVariant = `
-      background-color: transparent;
       color: ${primaryColor};
-      border: none;
-      text-decoration: underline;
     `;
 
   let variants = {};
@@ -60,24 +44,16 @@
   };
 </script>
 
-<div class={containerClass} bind:clientHeight={h}>
+<div class={containerClass}>
   <button
     {id}
     {type}
     class={`svelte-button ${variant}`}
     on:click={disabled ? null : onClick}
-    style={`${rootStyle} ${variants[variant]}`}
+    style={variants[variant]}
     {tabindex}
     {disabled}
   >
     <slot />
   </button>
 </div>
-
-<svelte:head>
-  <style>
-    .svelte-button:hover {
-      filter: brightness(0.85);
-    }
-  </style>
-</svelte:head>

@@ -1,0 +1,38 @@
+.svelte-button {
+  text-align: center;
+  direction: ltr;
+  user-select: none;
+  padding: 10px 15px;
+  font-weight: 600;
+  transition: all 200ms;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.svelte-button:disabled {
+  cursor: default;
+}
+
+.svelte-button.solid {
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.svelte-button.link {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}
+
+.svelte-button.outline {
+  border: 1px solid currentColor;
+  border-radius: 10px;
+}
+
+button[disabled]:hover {
+  filter: brightness(1);
+}
+
+.svelte-button:hover {
+  filter: brightness(0.85);
+}
