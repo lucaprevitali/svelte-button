@@ -3,7 +3,25 @@
   import Button from "../components/Button.svelte";
 </script>
 
-<Meta title="Example/Button" component={Button} />
+<Meta
+  title="Example/Button"
+  component={Button}
+  argTypes={{
+    variant: {
+      options: ["solid", "outline", "link"],
+      control: { type: "select" },
+    },
+    tabindex: {
+      control: { type: "number" },
+    },
+    primaryColor: {
+      control: { type: "color" },
+    },
+    secondaryColor: {
+      control: { type: "color" },
+    },
+  }}
+/>
 
 <Template let:args>
   <Button {...args} on:click={args.onClick}>Button</Button>

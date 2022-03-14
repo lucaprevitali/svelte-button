@@ -11,13 +11,13 @@ Try it in the [Storybook](https://main--6229ceda6f955d003a8e368d.chromatic.com)
 **Yarn**
 
 ```bash
-yarn add -D svelte-button
+yarn add svelte-button
 ```
 
 **NPM**
 
 ```bash
-npm i -D svelte-button
+npm install --save svelte-button
 ```
 
 ## Usage
@@ -67,9 +67,9 @@ For example to achieve a template with a left icon you can do as following:
 
 With the `variant` property you can choose between 3 different buttons styles:
 
-- Solid (default)
-- Outline
-- Link
+- `solid`
+- `outline`
+- `link`
 
 To override the default color scheme there are available `primaryColor` and `secondaryColor` properties.
 
@@ -105,6 +105,7 @@ All the props are optional.
 | variant        | `"solid"`     |
 | primaryColor   | `""`          |
 | secondaryColor | `""`          |
+
 
 ## Events
 
